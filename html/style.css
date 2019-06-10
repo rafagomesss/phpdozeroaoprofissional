@@ -124,7 +124,8 @@ img {
 }
 
 .flutuante {
-    position: absolute;
-    top: 150px;
-    left: 800px;
+    position: fixed;
+    background-color: #FF5858;
+    bottom: 0px;
+    right: 0px;
 }
