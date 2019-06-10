@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Formulários</title>
+    </head>
+    <body>
+        <a href="index.html" title="Página Inicial" style="background-color: #0DDC6F; text-decoration: none; padding: 8px; color: #FFFFFF; border-radius: 5px; margin-top: 10px; display: inline-block;" onMouseOver="this.style.backgroundColor ='#018B43'" onMouseOut="this.style.backgroundColor='#0DDC6F'">Home</a>
+        <h2>Formulários</h2>
+        <form method="POST" action="">
+            <label for="usuario">Usuário: </label> <br>
+            <input id="usuario" name="usuario" class="" type="text"/> <br><br>
+            <label for="usuario">Senha: </label> <br>
+            <input id="senha" name="senha" class="" type="password"/> <br><br>
+
+            <label for="usuario">Mensagem: </label> <br>
+            <textarea id="mensagem" name="mensagem" rows="4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus reiciendis temporibus ullam non ipsa facilis nam, recusandae, alias quidem maiores ratione veniam ab dignissimos expedita illum quis consectetur nostrum harum.</textarea> <br><br>
+
+            <label for="usuario">Opções: </label> <br>
+            <select id="opcoes" name="opcoes">
+                <option value="">Selecione...</option>
+                <option value="1">Valor/Opção1</option>
+                <option value="2">Valor/Opção2</option>
+                <option value="3">Valor/Opção3</option>
+            </select> <br><br>
+
+            <label for="usuario">Sexo: </label> <br>
+            <input type="radio" name="sexo" value="M"/> Masculino <br>
+            <input type="radio" name="sexo" value="F"/> Feminino <br><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </body>
+</html>
