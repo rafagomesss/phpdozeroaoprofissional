@@ -129,3 +129,22 @@ img {
     bottom: 0px;
     right: 0px;
 }
+
+.displays {
+    width: 300px;
+    height: 100px;
+    background-color: #FF5A5A;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: "Fira Code Retina", Helvetica, Georgia, Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    /* display: none; */
+    /* display: block; */
+    /* display: inline; */
+    display: inline-block;
+}
