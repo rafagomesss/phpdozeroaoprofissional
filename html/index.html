@@ -24,12 +24,26 @@
                 background-color: #B30000;
             }
 
-            ul li a {
+            ul li a:not(.site-1-logomarca) {
                 text-decoration: none;
                 padding: 10px;
                 color: #FFFFFF;
             }
 
+            .site-1-logomarca {
+                background:  none;
+                background-color: #3DC1FF;
+                border-radius: 5px;
+                padding: 4px;
+                text-transform: uppercase;
+                font-size: 12px;
+                color: #FFFFFF;
+                text-decoration: none;
+            }
+
+            .site-1-logomarca:hover {
+                background-color: #008CCE;
+            }
         </style>
     </head>
     <body>
@@ -103,6 +117,9 @@
             </li>
             <li>
                 <a href="diretorios.html" title="Formatação Links">Diretórios</a>
+            </li>
+            <li>
+                <a class="site-1-logomarca" href="sitelogomarca.html" title="Site Logomarca">Site Logomarca</a>
             </li>
         </ul>
     </body>

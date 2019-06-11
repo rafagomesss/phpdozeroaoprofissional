@@ -19,11 +19,11 @@ body#bodySeletores {
     background-color: #018B43;
 }
 
-h1 {
+h1:not(.titulo-banner-header) {
     text-transform: uppercase;
 }
 
-img {
+img:not(.img-site-content){
     width: 380px;
 }
 
@@ -177,4 +177,3 @@ img {
     padding: 15px;
     width: 415px;
 }
-

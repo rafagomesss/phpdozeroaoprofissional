@@ -1,0 +1,117 @@
+
+/* SITE */
+
+body {
+    font-family: Fira Code Retina, Helvetica, Arial, sans-serif
+}
+
+.header-menu {
+
+}
+
+.nav-menu {
+    background-color: #1B1B1B;
+    height: 50px;
+    padding: 0px;
+    padding-left: 260px;
+    padding-right: 260px;
+}
+
+.logomarca {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: Fira Code Retina;
+    float: left;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+.nav-list-items {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    float: right;
+}
+
+.nav-item-menu {
+    display: inline-block;
+    padding: 16px;
+    transition: .4s;
+}
+
+.nav-item-menu:hover {
+    transition: .4s;
+    background-color: #52B4FF;
+}
+
+.nav-item-menu-active {
+    background-color: #52B4FF;
+}
+
+.nav-item-menu a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.div-banner {
+    background-color: #52B4FF;
+    color: #FFFFFF;
+    height: 200px;
+    padding-left: 260px;
+    padding-right: 260px;
+    padding-top: 80px;
+}
+
+.titulo-banner-header {
+    padding: 0px;
+    margin: 0px;
+}
+
+.btn-baner-header {
+    background-color: #FFC35A;
+    color: #000000;
+    padding: 10px;
+    width: 16%;
+    border:  none;
+    border-radius: 5px
+}
+
+.p-banner-header {
+    margin: 5px 0px 20px 0px;
+}
+
+.div-content {
+    text-align: center;
+    padding-left: 260px;
+    padding-right: 260px;
+}
+
+.div-content h2 {
+    text-align: center;
+}
+
+.img-site-content {
+    display: block;
+}
+
+.div-4 {
+    text-align: center;
+    background-color: #000000;
+    display: inline-block;
+    padding: 0px 5px;
+}
+
+.div-footer {
+    margin-top: 20px;
+    background-color: #1E99F8;
+    color: #FFFFFF;
+    padding: 25px;
+    text-align: center;
+    bottom: 0px;
+    width: 100%;
+    position: fixed;
+}
+
+.main-main {
+    padding-bottom: 100px;
+}
