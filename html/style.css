@@ -148,3 +148,33 @@ img {
     /* display: inline; */
     display: inline-block;
 }
+
+.link-teste {
+    color: #000000;
+    text-decoration: none;
+}
+
+.link-teste:hover {
+    text-decoration: underline;
+    background-color: #FF5C5C;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.img-diretorios {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #3C3C3C;
+    display: inline-block;
+    margin-top: 5px;
+    border-radius: 15px;
+}
+
+.div-diretorios {
+    background-color: #FF5050;
+    padding: 15px;
+    width: 415px;
+}
+
