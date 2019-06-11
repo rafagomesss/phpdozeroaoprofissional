@@ -59,7 +59,7 @@ body {
     height: 200px;
     padding-left: 260px;
     padding-right: 260px;
-    padding-top: 50px;
+    padding-top: 70px;
     padding-bottom: 30px;
 }
 
@@ -117,4 +117,17 @@ body {
 
 .main-main {
     padding-bottom: 100px;
+}
+
+.img-man-victory {
+    display: inline-block;
+    float: right;
+    width: 450px;
+}
+
+.img-banner-header {
+    position: absolute;
+    margin-right: 260px;
+    right: -35px;
+    top: 51px;
 }
