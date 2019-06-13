@@ -104,3 +104,37 @@ div.teste {
         width: 300px;
     }
 } */
+
+.res-header {
+    width: 100%;
+    background-color: #FFBF24;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+
+.col-article p {
+    padding: 10px;
+}
+
+.col-article h3 {
+    padding-left: 10px;
+}
+
+.col-article {
+    float: left;
+    width: 25%;
+    text-align: justify;
+}
+
+@media only screen and (min-width: 650px) and (max-width: 1200px) {
+    .col-article {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .col-article {
+        width: 100%;
+    }
+}
