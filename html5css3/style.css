@@ -2,11 +2,11 @@ body {
     margin: 0;
 }
 
-nav {
+/* nav {
     height: 50px;
     background-color: #999999;
 }
-
+ */
 footer {
     height: 100px;
     background-color: #CCCCCC;
@@ -105,6 +105,7 @@ div.teste {
     }
 } */
 
+/* Design Responsivo 2 */
 .res-header {
     width: 100%;
     background-color: #FFBF24;
@@ -138,3 +139,4 @@ div.teste {
         width: 100%;
     }
 }
+
