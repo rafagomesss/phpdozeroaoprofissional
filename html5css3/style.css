@@ -18,3 +18,89 @@ gomes {
     height: 300px;
     background-color: #4CBEFF;
 }
+
+div.teste {
+    width: 600px;
+    height: 300px;
+    background-color: #FF6363;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 600px) {
+    div.teste {
+        width: 300px;
+        height: 150px;
+        background-color: #63FF8B;
+    }
+}
+
+/* Design Responsivo 1 */
+
+.topo {
+    width: 100%;
+    max-width: 800px;
+    height: 100px;
+    margin: auto;
+}
+
+.logo {
+    width: 50%;
+    height: 100px;
+    float: left;
+    background-color: #EEEEEE;
+}
+
+.menu {
+    width: 50%;
+    height: 100px;
+    float: left;
+    background-color: #DDDDDD;
+}
+
+.corpo {
+    width: 100%;
+    max-width: 800px;
+    height: 200px;
+    margin: auto;
+    background-color: #CCCCCC;
+}
+
+.rodape {
+    width: 100%;
+    max-width: 800px;
+    height: 100px;
+    margin: auto;
+    background-color: #DDDDDD;
+}
+
+@media only screen and (max-width: 400px) {
+    .topo {
+        height: 200px;
+    }
+    .logo,
+    .menu {
+        width: 100%;
+    }
+}
+
+/* @media only screen and (min-width: 500px) and (max-width: 800px) {
+    .topo,
+    .corpo,
+    .rodape {
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .topo {
+        width: 300px;
+        height: 200px;
+    }
+    .logo,
+    .menu {
+        width: 100%;
+    }
+    .corpo,
+    .rodape {
+        width: 300px;
+    }
+} */
