@@ -79,6 +79,11 @@
         width: 100%;
     }
 
+    .responsivo-3-main {
+        /* height: 400px; */
+        padding-bottom: 100px;
+    }
+
     .responsivo-3-menu {
         height: 110px;
         margin-top: 10px;
@@ -88,5 +93,9 @@
     .responsivo-3-aside {
         height: 100px;
         line-height: 100px;
+    }
+
+    .responsivo-3-article img {
+        width: 100%;
     }
 }
