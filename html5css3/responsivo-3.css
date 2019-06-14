@@ -1,0 +1,92 @@
+.responsivo-3-site {
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.responsivo-3-header {
+    background-color: #FFA500;
+    width: 100%;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+}
+
+.responsivo-3-menu {
+    background-color: #FFFFFF;
+    float: left;
+    width: 25%;
+    height: 300px;
+}
+
+.responsivo-3-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.responsivo-3-menu ul li {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #E7E7E7;
+}
+
+.responsivo-3-menu ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.responsivo-3-main {
+    background-color: #F2F2F2;
+    float: left;
+    width: 50%;
+    height: 300px;
+}
+
+.responsivo-3-article {
+    padding: 0 15px;
+    text-align: justify;
+}
+
+.responsivo-3-article img {
+    width: 40%;
+}
+
+.responsivo-3-aside {
+    background-color: #929292;
+    float: right;
+    width: 25%;
+    height: 300px;
+    line-height: 300px;
+    text-align: center;
+}
+
+.responsivo-3-footer {
+    width: 100%;
+    background-color: #D2D2D2;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    clear: both;
+}
+
+@media only screen and (max-width: 820px) {
+    .responsivo-3-menu,
+    .responsivo-3-main,
+    .responsivo-3-aside,
+    .responsivo-3-footer {
+        width: 100%;
+    }
+
+    .responsivo-3-menu {
+        height: 110px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+
+    .responsivo-3-aside {
+        height: 100px;
+        line-height: 100px;
+    }
+}
