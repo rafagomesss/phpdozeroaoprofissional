@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Required Input</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <style type="text/css">
+            .container-required-input {
+                background-color: #C3C3C3;
+                width: 200px;
+                padding: 25px;
+                margin: auto;
+                border-radius: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="index.html" title="Página Inicial" style="background-color: #0DDC6F; text-decoration: none; padding: 8px; color: #FFFFFF; border-radius: 5px; margin-top: 10px; display: inline-block;" onMouseOver="this.style.backgroundColor ='#018B43'" onMouseOut="this.style.backgroundColor='#0DDC6F'">Home</a>
+        <h2>Required Input</h2>
+        <div class="container-required-input">
+            <form>
+                <label for="email">Email:</label>
+                <input type="email" name="email" placeholder="exemplo@exemplo.com" required> <br><br>
+                <label for="password">Senha:</label>
+                <input type="password" name="password" placeholder="********" required> <br><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </body>
+</html>
