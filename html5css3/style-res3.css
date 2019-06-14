@@ -1,57 +1,66 @@
-/* Design Responsivo 3 */
-
-.res3-header {
-    width: 100%;
-    background-color: #FFBF24;
-    height: 100px;
-    line-height: 100px;
-    text-align: center;
+body {
+  margin: 0;
+  background-color: #eeeeee;
 }
 
-#main-res3 {
-    background-color: #FF8585;
-    width: 50%;
-    height: 300px;
-    float: left;
+p {
+  padding: 10px;
 }
 
-#main-res3 section article header h2 {
-    margin: 0;
+h2 {
+  padding-left: 10px;
 }
 
-.nav-header-menu {
-    width: 25%;
-    float: left;
-    height: 300px;
-    background-color: #CCCC;
+.site {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  background-color: #ffffff;
 }
 
-.nav-header-menu ul,
-.nav-header-menu li {
-    margin: 0;
-    padding: 0;
+.topo {
+  background-color: orange;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
 }
 
-.nav-header-menu li {
-    list-style: none;
-    height: 25px;
-    line-height: 25px;
-    border-bottom: 1px solid #CCCCCC;
+.menu {
+  width: 25%;
+  height: 300px;
+  float: left;
 }
 
-.res3-div-header h1 {
-    margin: 0;
+.menu ul,
+.menu li {
+  margin: 0;
+  padding: 0;
 }
 
-.aside-res3 {
-    width: 25%;
-    height: 300px;
-    float: right;
-    background-color: #82CCFF;
+.menu li {
+  list-style: none;
+  height: 25px;
+  line-height: 25px;
+  border-bottom: 1px solid #cccccc;
+  padding-left: 10px;
 }
 
-.footer-res3 {
-    clear: both;
-    height: 80px;
-    background-color: #EAEAEA;
+.center {
+  width: 50%;
+  height: 300px;
+  float: left;
+}
+
+.right-side {
+  width: 25%;
+  height: 300px;
+  float: right;
+  background-color: #dddddd;
+}
+
+.rodape {
+  clear: both;
+  height: 80px;
+  background-color: #cccccc;
 }
