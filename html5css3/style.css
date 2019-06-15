@@ -139,3 +139,14 @@ div.teste {
         width: 100%;
     }
 }
+
+
+.border-radius {
+    background-color: #FF6A6A;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    border-radius: 100px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
