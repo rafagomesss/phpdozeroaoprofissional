@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Eventos Teclado</title>
+    </head>
+    <body>
+        <!-- <input type="text" onkeydown="apertouTecla(event)" onkeyup="soltouTecla()" onkeypress="pressionou()"> -->
+        <input type="text" onkeypress="pressionou(event)">
+        <script type="text/javascript">
+            let apertouTecla = (e) => console.log(e.keyCode + ' onkeydown TECLA!');
+            let soltouTecla = () => console.log('onkeyup  TECLA');
+            let pressionou = (e) => {
+                let message = 'onkeypress TECLA'; e.shiftKey == true ? message += ' Apertou shift e alguma outra letra...' : message; console.log(message);
+            }
+        </script>
+    </body>
+</html>

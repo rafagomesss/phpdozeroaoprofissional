@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Eventos Mouse</title>
+    </head>
+    <body>
+
+        <!--
+            <button onmousedown="clicouMouse()" onmouseup="soltouMouse()" onmouseover="passouMouse()" onmouseout="mouseSaiuDeCima()" onmousemove="movendoMouse()" onclick="clicou()" oncontextmenu="return botaoDireito()" ondblclick="clicouDuasVezes()">EU SOU UM BOTÃO</button>
+        -->
+        <button onclick="clicou()" oncontextmenu="return botaoDireito()" ondblclick="clicouDuasVezes()">EU SOU UM BOTÃO</button>
+        <script type="text/javascript">
+            let clicou = () => console.log('CLICOU!');
+            let botaoDireito = () => {console.log('BOTÃO DIREITO'); return false;}
+            let clicouDuasVezes = () => console.log('CLICOU DUAS VEZES!');
+            /**
+            function clicouMouse() {
+                console.log('APERTOU O MOUSE!');
+            }
+
+            function soltouMouse() {
+                console.log('SOLTOU O MOUSE!');
+            }
+
+            function passouMouse() {
+                console.log('PASSOU O MOUSE EM CIMA!');
+            }
+
+            function mouseSaiuDeCima() {
+                console.log('MOUSE SAIU DE CIMA!');
+            }
+
+            function movendoMouse() {
+                console.log('MOUSE ESTÁ SE MEXENDO!');
+            }
+            */
+        </script>
+    </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jogo Estoura Balões</title>
+        <style type="text/css">
+            .bola {
+                width: 50px;
+                height: 50px;
+                border-radius: 25px;
+                position: absolute;
+            }
+        </style>
+    </head>
+    <body onload="iniciar()">
+        <script type="text/javascript">
+            function addBola() {
+                let colors = [
+                    '#000000',
+                    '#FF0000',
+                    '#FFFF00',
+                    '#808000',
+                    '#00FA9A',
+                    '#DC143C',
+                    '#FF4500',
+                    '#00008B',
+                    '#32CD32',
+                    '#008080',
+                    '#808080',
+                ];
+                let bola = document.createElement('div');
+                bola.setAttribute('class', 'bola');
+
+                let p1 = Math.floor(Math.random() * 800);
+                let p2 = Math.floor(Math.random() * 700);
+                bola.setAttribute('style', `left:${p1}px; top:${p2}px; background-color:${colors[Math.floor(Math.random() * (colors.length - 0))]}`);
+
+                bola.setAttribute('onclick', 'estourar(this)');
+
+                document.body.appendChild(bola);
+            }
+
+            function estourar(elemento) {
+                document.body.removeChild(elemento);
+            }
+
+            function iniciar() {
+                setInterval(addBola, 1000);
+            }
+        </script>
+    </body>
+</html>
