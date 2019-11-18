@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+    </head>
+    <body>
+        <form method="POST" onsubmit="return validar()">
+            Digite um número de 2 algarismos: <br>
+            <input id="numero" name="numero" type="text"> <br><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+
+        <script type="text/javascript">
+            function validar() {
+                var valor = document.getElementById('numero').value;
+
+                if (valor.length <= 2) {
+                    return true;
+                }
+                alert('Você digitou um número que tem mais de 2 algarismos');
+                return false;
+            }
+        </script>
+    </body>
+</html>
