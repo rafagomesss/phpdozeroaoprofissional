@@ -116,3 +116,110 @@ $post->addComentario('Teste 2');
 $post->addComentario('Teste 3');
 
 echo 'Quantidade de comentários: ' . $post->getQuantosComentarios();
+
+echo '<hr>';
+
+/*
+# Herança de classes
+class Animal
+{
+    public $nome;
+    private $idade;
+}
+
+class Cavalo extends Animal
+{
+    private $quantidade_de_patas;
+    private $tipo_de_pelo;
+}
+
+class Gato extends Animal
+{
+    private $quantidade_de_patas;
+    private $miado;
+}
+
+$cavalo = new Cavalo();
+$cavalo->nome = 'Cavalo 1';
+
+echo 'O nome do cavalo é: ' . $cavalo->nome;
+*/
+echo '<hr>';
+
+# Abstração de classes
+abstract class Animal
+{
+    private $nome;
+    private $idade;
+
+    abstract protected function andar();
+
+    public function setNome($nome)
+    {
+        $this->nome = $nome;
+    }
+
+    public function getNome()
+    {
+        return $this->nome;
+    }
+}
+
+class Cavalo extends Animal
+{
+    private $quantidade_de_patas;
+    private $tipo_de_pelo;
+
+    public function andar()
+    {
+    }
+}
+
+$cavalo = new Cavalo();
+$cavalo->setNome('Cavalo Teste');
+
+echo 'O nome do cavalo instanciado é: ' . $cavalo->getNome();
+echo '<hr>';
+
+# Interface
+
+interface Animall
+{
+    public function andar();
+}
+
+class Cao implements Animall
+{
+    public function andar()
+    {
+        echo 'O cão está andando...';
+    }
+}
+
+$cao = new Cao();
+$cao->andar();
+echo '<hr>';
+
+# Polimorfismo
+
+class Mamifero
+{
+    public function locomover()
+    {
+        return 'Estou me locomovendo ' . get_class() . '<br>';
+    }
+}
+
+$mamifero = new Mamifero();
+echo $mamifero->locomover();
+
+class Pessoa extends Mamifero
+{
+    public function locomover()
+    {
+        return 'Estou me locomovendo ' . get_class() . '<br>';
+    }
+}
+
+$pessoa = new Pessoa();
+echo $pessoa->locomover();
