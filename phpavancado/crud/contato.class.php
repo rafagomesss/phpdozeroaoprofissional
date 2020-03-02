@@ -49,7 +49,7 @@ class Contato
         return false;
     }
 
-    public function excluir($email)
+    public function excluir($id)
     {
         $sql = 'DELETE FROM contatos WHERE id = :id';
         $sql = $this->pdo->prepare($sql);
