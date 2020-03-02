@@ -36,17 +36,13 @@ class Contato
         return false;
     }
 
-    public function editar($nome, $email)
+    public function editar($nome, $id)
     {
-        if ($this->existeEmail($email)) {
-            $sql = 'UPDATE contatos SET nome = :nome WHERE email = :email';
-            $sql = $this->pdo->prepare($sql);
-            $sql->bindValue(':nome', $nome, PDO::PARAM_STR);
-            $sql->bindValue(':email', $email, PDO::PARAM_STR);
-            $sql->execute();
-            return true;
-        }
-        return false;
+        $sql = 'UPDATE contatos SET nome = :nome WHERE id = :id';
+        $sql = $this->pdo->prepare($sql);
+        $sql->bindValue(':nome', $nome, PDO::PARAM_STR);
+        $sql->bindValue(':id', $id, PDO::PARAM_INT);
+        $sql->execute();
     }
 
     public function excluir($id)
@@ -57,17 +53,17 @@ class Contato
         $sql->execute();
     }
 
-    public function getNome($email)
+    public function getInfo($id)
     {
-        $sql = 'SELECT nome FROM contatos WHERE email = :email';
-        $sql =  $this->pdo->prepare($sql);
-        $sql->bindValue(':email', $email, PDO::PARAM_STR);
+        $sql = 'SELECT * FROM contatos WHERE id = :id';
+        $sql = $this->pdo->prepare($sql);
+        $sql->bindValue(':id', $id, PDO::PARAM_INT);
         $sql->execute();
+
         if ($sql->rowCount() > 0) {
-            $info = $sql->fetch();
-            return $info['nome'];
+            return $sql->fetch();
         }
-        return 'Contato não encontrado!';
+        return [];
     }
     public function getAll()
     {
