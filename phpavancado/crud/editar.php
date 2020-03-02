@@ -22,6 +22,7 @@ if (!empty($_GET['id'])) {
     Nome: <br>
     <input type="text" name="nome" value="<?= $info['nome']; ?>"><br><br>
 
-    E-mail: <?= $info['email']; ?> <br><br>
+    E-mail: <br>
+    <input type="email" name="email" value="<?= $info['email']; ?>"><br><br>
     <input type="submit" value="Salvar">
 </form>

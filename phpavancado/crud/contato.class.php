@@ -36,13 +36,18 @@ class Contato
         return false;
     }
 
-    public function editar($nome, $id)
+    public function editar($nome, $email, $id)
     {
-        $sql = 'UPDATE contatos SET nome = :nome WHERE id = :id';
-        $sql = $this->pdo->prepare($sql);
-        $sql->bindValue(':nome', $nome, PDO::PARAM_STR);
-        $sql->bindValue(':id', $id, PDO::PARAM_INT);
-        $sql->execute();
+        if ($this->existeEmail($email) === false) {
+            $sql = 'UPDATE contatos SET nome = :nome, email = :email WHERE id = :id';
+            $sql = $this->pdo->prepare($sql);
+            $sql->bindValue(':nome', $nome, PDO::PARAM_STR);
+            $sql->bindValue(':email', $email, PDO::PARAM_STR);
+            $sql->bindValue(':id', $id, PDO::PARAM_INT);
+            $sql->execute();
+            return true;
+        }
+        return false;
     }
 
     public function excluir($id)
