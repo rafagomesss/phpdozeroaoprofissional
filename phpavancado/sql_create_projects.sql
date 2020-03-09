@@ -169,11 +169,11 @@ CREATE TABLE IF NOT EXISTS usuarios(
     senha VARCHAR(32),
     permissoes TEXT,
     PRIMARY KEY(id)
-);
+)ENGINE = InnoDB DEFAULT CHARSET = Latin1;
 
 INSERT INTO usuarios SET email = 'suporte@b7web.com.br', senha = md5('12345'), permissoes = 'ADD,EDIT,DEL,SECRET';
 -- UPDATE usuarios SET permissoes = 'ADD' WHERE id = 1;
--- UPDATE usuarios SET permissoes = 'ADD,EDIT,DEL,SECRET' WHERE id = 1; 
+-- UPDATE usuarios SET permissoes = 'ADD,EDIT,DEL,SECRET' WHERE id = 1;
 
 SELECT * FROM usuarios;
 
@@ -181,10 +181,41 @@ CREATE TABLE IF NOT EXISTS documentos(
     id INT(11) UNSIGNED AUTO_INCREMENT NOT NULL,
     titulo VARCHAR(100),
     PRIMARY KEY(id)
-);
+)ENGINE = InnoDB DEFAULT CHARSET = Latin1;
 
 INSERT INTO documentos SET titulo = 'Alvará de Fulano';
 INSERT INTO documentos SET titulo = 'CPF de Cicrano';
 INSERT INTO documentos SET titulo = 'Recibo do carro X';
 
 SELECT * FROM documentos;
+
+-- ###############################################################################################################
+
+CREATE DATABASE IF NOT EXISTS projeto_reservas CHARACTER SET utf8
+  COLLATE utf8_general_ci;
+USE projeto_reservas;
+
+
+CREATE TABLE IF NOT EXISTS carros(
+  id INT(11) UNSIGNED AUTO_INCREMENT NOT NULL,
+  nome VARCHAR(100),
+  PRIMARY KEY (id)
+)ENGINE = InnoDB DEFAULT CHARSET = Latin1;
+
+-- INSERT INTO carros SET nome = 'Palio';
+-- INSERT INTO carros SET nome = 'Voyage';
+-- INSERT INTO carros SET nome = 'Corolla';
+-- INSERT INTO carros SET nome = 'Hilux';
+-- INSERT INTO carros SET nome = 'Camaro';
+
+SELECT * FROM carros;
+
+CREATE TABLE IF NOT EXISTS reservas(
+  id INT(11) UNSIGNED AUTO_INCREMENT NOT NULL,
+  id_carro INT(11) UNSIGNED,
+  data_inicio DATE,
+  data_fim DATE,
+  pessoa VARCHAR(100),
+  PRIMARY KEY (id)
+)ENGINE = InnoDB DEFAULT CHARSET = Latin1;
+
